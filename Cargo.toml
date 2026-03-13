@@ -1,8 +1,8 @@
 [package]
 edition = "2021"
 name = "libxdo-sys"
-version = "0.11.0"
-authors = ["Mika Attila <radiantstatue@gmail.com>"]
+version = "0.12.0"
+authors = ["Mika Attila <radiantstatue@gmail.com>", "Ioanis Tsagakakis <tsagatakis@protonmail.com>"]
 license = "MIT"
 description = "FFI bindings to libxdo"
 readme = "README.md"
@@ -14,5 +14,5 @@ build = "build.rs"
 
 [dependencies]
 libc = "0.2.183"
-x11rb = { version = "0.13.2", features = ["cursor", "image", "extra-traits", "shm", "xkb", "xtest", "res"] }
+#x11rb = { version = "0.13.2", features = ["cursor", "image", "extra-traits", "shm", "xkb", "xtest", "res"] }
 

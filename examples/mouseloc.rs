@@ -1,6 +1,5 @@
 use libxdo_sys::*;
 use std::ptr::null;
-use x11rb::protocol::xproto::Window;
 
 fn main() {
     unsafe {
@@ -15,7 +14,7 @@ fn main() {
         let mut screen = 0;
         let mut window: Window = 0;
         xdo_get_mouse_location2(xdo, &mut x, &mut y, &mut screen, &mut window);
-        eprintln!("{x}, {y}, {screen}, {window}");
+        eprintln!("Mouse loc x={x}, y={y}, screen={screen}, window=0x{window:x}");
 
         xdo_free(xdo);
     }

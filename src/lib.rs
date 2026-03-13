@@ -3,10 +3,15 @@
 use {
     libc::{useconds_t, wchar_t},
     // x11::xlib::{Atom, Display, KeyCode, KeySym, Screen, Window, XID},
-    x11rb::protocol::xproto::*,
+    // x11rb::protocol::xproto::*,
 };
 
 pub type Display = libc::c_void;
+pub type Screen = libc::c_void;
+pub type Window = libc::c_ulong;
+pub type Atom = libc::c_ulong;
+pub type Keycode = libc::c_uchar;
+pub type Keysym = libc::c_ulong;
 
 pub const CURRENTWINDOW: Window = 0;
 
