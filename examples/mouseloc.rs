@@ -1,5 +1,6 @@
+use libxdo_sys::*;
 use std::ptr::null;
-use {libxdo_sys::*, x11::xlib::Window};
+use x11rb::protocol::xproto::Window;
 
 fn main() {
     unsafe {

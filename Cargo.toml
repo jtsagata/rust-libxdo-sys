@@ -13,5 +13,6 @@ links = "xdo"
 build = "build.rs"
 
 [dependencies]
-x11 = "2.12.1"
-libc = "0.2.20"
+libc = "0.2.183"
+x11rb = { version = "0.13.2", features = ["cursor", "image", "extra-traits", "shm", "xkb", "xtest", "res"] }
+
